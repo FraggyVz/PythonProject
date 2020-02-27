@@ -1,9 +1,7 @@
 import unittest
+from Task5 import url
 class TestMyProgram (unittest.TestCase):
-    def test_upper (self):
-        self.assertEqual ('foo'.upper (),'FOO')
-    def test_isupper(self):
-        self.assertTrue ('FOO'.isupper())
-        self.assertFalse('Foo'.isupper())
+    def test_list_int(self):
+        self.assertEqual(url, 'http://172.17.50.43/freebix')
 if __name__ == '__main__':
     unittest.main ()
